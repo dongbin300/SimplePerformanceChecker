@@ -1,19 +1,24 @@
 # SimplePerformanceChecker
 A Simple Performance Check!
 
+<br>
+
 ## Environment
 - Visual Studio 2019
 - .NET Core 3.1
 
+<br>
+
 ## Usage
-using `SimplePerformanceChecker`
+using `SimplePerformanceChecker`.
 ```csharp
 using SimplePerformanceChecker;
 ```
 
 <br>
 
-Compare performance of `Method1` and `Method2`
+Compare performance of `Method1` and `Method2`.  
+**Methods must not be have input and output argument.**
 ```csharp
 PerformanceChecker checker = new PerformanceChecker(Method1, Method2);
 ```
