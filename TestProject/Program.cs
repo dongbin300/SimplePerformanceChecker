@@ -6,7 +6,7 @@ namespace TestProject
 {
     class Program
     {
-        private static List<int> numbers = new List<int>(){ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
+        private static List<int> numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
 
         static void Main(string[] args)
         {
@@ -14,7 +14,7 @@ namespace TestProject
             checker.CountOfPerform = 1_000_000;
 
             var elapsedTimes = checker.Perform();
-            foreach(double elapsedTime in elapsedTimes)
+            foreach (double elapsedTime in elapsedTimes)
             {
                 Console.WriteLine(elapsedTime);
             }
@@ -35,7 +35,7 @@ namespace TestProject
         {
             int fifteen;
 
-            foreach(int number in numbers)
+            foreach (int number in numbers)
             {
                 if (number.Equals(15))
                 {

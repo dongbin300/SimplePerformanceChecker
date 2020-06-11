@@ -60,16 +60,16 @@ namespace SimplePerformanceChecker
             List<double> elapsedTimes = new List<double>();
 
             Stopwatch stopwatch = new Stopwatch();
-            foreach(Action action in actions)
+            foreach (Action action in actions)
             {
                 stopwatch.Start();
-                for(int i = 0; i < CountOfPerform; i++)
+                for (int i = 0; i < CountOfPerform; i++)
                 {
                     action();
                 }
                 stopwatch.Stop();
 
-                elapsedTimes.Add((double)stopwatch.ElapsedTicks/1_000_000);
+                elapsedTimes.Add((double)stopwatch.ElapsedTicks / 1_000_000);
             }
 
             return elapsedTimes;
@@ -85,7 +85,7 @@ namespace SimplePerformanceChecker
 
             StringBuilder builder = new StringBuilder();
             builder.AppendLine("================================");
-            for(int i=0;i<actions.Count;i++)
+            for (int i = 0; i < actions.Count; i++)
             {
                 builder.Append(actions[i].Method.Name);
                 builder.Append(" : ");
