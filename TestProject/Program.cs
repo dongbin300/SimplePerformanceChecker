@@ -13,6 +13,14 @@ namespace TestProject
             PerformanceChecker checker = new PerformanceChecker(Method1, Method2);
             checker.CountOfPerform = 1_000_000;
 
+            var elapsedTimes = checker.Perform();
+            foreach(double elapsedTime in elapsedTimes)
+            {
+                Console.WriteLine(elapsedTime);
+            }
+            // 1.160833
+            // 1.874759
+
             Console.WriteLine(checker.PerformResult());
             // ================================
             // Method1 : 1.160833sec
