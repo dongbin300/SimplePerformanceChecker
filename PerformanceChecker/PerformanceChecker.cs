@@ -69,7 +69,7 @@ namespace SimplePerformanceChecker
                 }
                 stopwatch.Stop();
 
-                elapsedTimes.Add((double)stopwatch.ElapsedTicks / 1_000_000);
+                elapsedTimes.Add((double)stopwatch.ElapsedTicks / 10_000_000);
             }
 
             return elapsedTimes;
